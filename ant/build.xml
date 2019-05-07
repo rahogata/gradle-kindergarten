@@ -1,0 +1,5 @@
+<project>
+    <target name="antPlayCarrom">
+        <echo message="Playing Carrom board..." />
+    </target>
+</project>

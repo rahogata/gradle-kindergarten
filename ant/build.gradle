@@ -1,0 +1,8 @@
+ant.importBuild 'build.xml'
+
+task gradleMusicChair {
+    doLast {
+        def msg = 'Playing music chair...'
+        ant.echo(message: msg)
+    }
+}

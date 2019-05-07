@@ -1,0 +1,6 @@
+task playMusicChair {
+    doLast {
+        println 'Playing Music Chair...'
+    }
+}
+

@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+// Task that runs before any other tasks that check depends.
+task aTask {
+  doLast {
+    println "Running $name"
+  }
+}
+
+// Task that runs after all other tasks that check depends.
+task uTask {
+  doLast {
+    println "Running $name"
+  }
+}
+
+check {
+    /*
+    * Comment first line and uncomment second one to run task last.
+    */
+    dependsOn aTask
+//  dependsOn uTask
+}
+

@@ -1,6 +1,25 @@
+buildscript {
+    ext {
+        extraProp = 'Tripura Rahasya'
+    }
+}
+
+version = '1.0'
+
 task playMusicChair {
     doLast {
         println 'Playing Music Chair...'
     }
 }
 
+task showExtraProps {
+    doLast {
+        println "extraProp=$extraProp"
+    }
+}
+
+task showVersion {
+    doLast {
+        println "version=$version"
+    }
+}
